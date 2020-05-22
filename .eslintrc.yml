@@ -1,0 +1,22 @@
+---
+env:
+  es6: true
+  node: true
+extends:
+  - eslint:recommended
+  - plugin:prettier/recommended
+plugins:
+  - prettier
+parser: babel-eslint
+parserOptions:
+  sourceType: module
+  ecmaVersion: 6
+  allowImportExportEverywhere: false
+  codeFrame: true
+rules:
+  prettier/prettier: error
+  no-console: warn
+  no-empty: warn
+  no-undef: warn
+  no-unused-vars: off
+  strict: off
